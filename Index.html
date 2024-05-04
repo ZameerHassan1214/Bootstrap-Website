@@ -1,211 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Nav with Bootstrap 5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/responsive-nav/1.0.39/responsive-nav.min.css">
+  <style>
+    .navbar-brand {
+    font-weight: bold;
+  }
+  .navbar-green{
+    background-color: #788a7c;
+  }
+  .section-3 {
+  background-color: #6c757d;
 
 
+  }
+  .section-3 img{
+    width: 100px;
+}
+.section-3 h5{
+    color: #6ed198;
+}
+.section-3 a{
+    text-decoration: none;
+    opacity: 0.7;
+}
+  .green-text {
+  color: #6ed198;
+}
+.carousel-item img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-img{
+  background-image: url(images/nav-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+
+  }
+  
+      .btn-sec-2{
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  padding: 5px 50px;
+  background-color: white;
+  }
+  .btn-sec-4{
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    padding: 5px 0;
+    width: 350px;
+    background-color: white;
+}
+.btn-sec-4:hover{
+    color: white;
+    border: 1px solid #6c757d;
+    background-color: #6c757d;
+}
+.btn5{
+color: white; 
+border: 1px solid white ;
+padding: 5px ;
+width: 350px;
+background-color: #6c757d;
+
+
+
+}
+.carousel-img{
+   height: 80vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.bg-img-1{
+    background-image: url(images/carousel-1.jpg);
+}
+.bg-img-2{
+    background-image: url(images/carousel-2.jpg);
+}
+.bg-img-3{
+    background-image: url(images/carousel-3.jpg);
+}
+  </style>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-green">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">BACK <span class="small-font">TO</span> YOURSELF</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">Retreats</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-green">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">BACK <span class="small-font">TO</span> YOURSELF</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Retreats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!--Section-1-->
-    <div class="container-fluid nav-img text-white text-center">
-        <div class="row justify-content-center pt-5">
-            <div class="col-md-6 pt-5">
-                <h1 class="fw-normal">Your journey starts here</h1>
-                <p>The Alexander technique teaches balance & co-ordination for body and mind becoming aware of the way
-                    we
-                    think, and move in everyday activities we can bring a clarity to our thinking and gives us space to
-                    manage the stress of daily life.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center pt-5">
-            <div class="col-md-6 pt-5 mt-4">
-                <button class="btn-nav">FIND OUT MORE</button>
-            </div>
-        </div>
-    </div>
-    <!--Section 2-->
-    <div class="container py-5">
-        <div class="row justify-content-center py-2">
-            <div class="col-md-8 text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nobis soluta commodi illum. Ipsam ipsum
-                    consequuntur, explicabo error quidem sint maiores omnis. Similique ipsa praesentium ea, doloremque
-                    possimus
-                    vero odit.</p>
-            </div>
-            <div class="col-md-10 d-flex justify-content-evenly pt-5">
-                <button class="btn-sec-2">ALEXANDER TECHNIQUE</button>
-                <button class="btn-sec-2">ENERGY WORK</button>
-                <button class="btn-sec-2">MODERN MEDITATION</button>
-            </div>
-        </div>
-    </div>
-    <!--Section 3-->
-    <div class="container-fluid section-3">
-        <div class="row justify-content-evenly py-3">
-            <div class="col-md-3" style="width: 18rem;">
-                <img src="images/logo1.png" class="py-5" alt="...">
-                <h5>Healing</h5>
-                <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="text-white">Read more..</a>
-            </div>
 
-            <div class="col-md-3" style="width: 18rem;">
-                <img src="images/logo2.png" class="py-5" alt="...">
-                <h5>Supportive</h5>
-                <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="text-white">Read more..</a>
-            </div>
 
-            <div class="col-md-3" style="width: 18rem;">
-                <img src="images/logo3.png" class="py-5" alt="...">
-                <h5>Ethical</h5>
-                <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="text-white">Read more..</a>
-            </div>
-        </div>
-    </div>
-    <!--Section 4-->
-    <div class="container py-5">
-        <div class="row justify-content-center py-2">
-            <div class="col-md-8 text-center">
-                <h6 class="py-2">RETREATS</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nobis soluta commodi illum. Ipsam ipsum
-                    consequuntur, explicabo error quidem sint maiores omnis. Similique ipsa praesentium ea, doloremque
-                    possimus
-                    vero odit.</p>
-            </div>
-            <div class="col-md-10 d-flex justify-content-center pt-5">
-                <button class="btn-sec-4">READ MORE</button>
-            </div>
-        </div>
-    </div>
-    <!--Section 5-->
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
+  <div class="container-fluid nav-img text-white text-center">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item carousel-img bg-img-1 active">
+            <div class="carousel-item active">
+                
                 <div class="carousel-caption d-none d-md-block">
-                    <p class="py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nostrum ab, corrupti esse aut
-                        laudantium vero error voluptates. Nisi vitae amet distinctio aspernatur, beatae modi quas dolore
-                        laboriosam natus qui.</p>
-                </div>
-            </div>
-            <div class="carousel-item carousel-img bg-img-2">
-                <div class="carousel-caption d-none d-md-block">
-                    <p class="py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nostrum ab, corrupti esse aut
-                        laudantium vero error voluptates. Nisi vitae amet distinctio aspernatur, beatae modi quas dolore
-                        laboriosam natus qui.</p>
-                </div>
-            </div>
-            <div class="carousel-item carousel-img bg-img-3">
-                <div class="carousel-caption d-none d-md-block">
-                    <p class="py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nostrum ab, corrupti esse aut
-                        laudantium vero error voluptates. Nisi vitae amet distinctio aspernatur, beatae modi quas dolore
-                        laboriosam natus qui.</p>
+                    <h1 class="fw-normal">Your journey starts here</h1>
+                    <p>The Alexander technique teaches balance & co-ordination for body and mind becoming aware of the way
+                        we
+                        think, and move in everyday activities we can bring a clarity to our thinking and gives us space to
+                        manage the stress of daily life.</p>
+                    <button class="btn btn-nav active text-white">FIND OUT MORE</button>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        
     </div>
-    <!--Section 6-->
-    <div class="container py-5">
-        <div class="row justify-content-center py-2">
-            <div class="col-md-8 text-center">
-                <h6 class="py-2">GIORGINA PONTENT</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nobis soluta commodi illum. Ipsam ipsum
-                    consequuntur, explicabo error quidem sint maiores omnis. Similique ipsa praesentium ea, doloremque
-                    possimus
-                    vero odit.</p>
-            </div>
-            <div class="col-md-10 d-flex justify-content-center pt-5">
-                <button class="btn-sec-4">LEARN MOR ABOUT GIORGINA</button>
-            </div>
-        </div>
-    </div>
-    <!--Section 7-->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-            <button class="btn-sec-4">Event for 2023</button>
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-</body>
+</div>
 
+
+<div class="container py-5">
+    <div class="row justify-content-center py-2">
+        <div class="col-md-8 text-center">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nobis soluta commodi illum. Ipsam ipsum
+                consequuntur, explicabo error quidem sint maiores omnis. Similique ipsa praesentium ea, doloremque
+                possimus
+                vero odit.</p>
+        </div>
+        <div class="col-md-10 d-flex justify-content-evenly pt-5">
+            <button class="btn-sec-2">ALEXANDER TECHNIQUE</button>
+            <button class="btn-sec-2">ENERGY WORK</button>
+            <button class="btn-sec-2">MODERN MEDITATION</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container-fluid section-3">
+    <div class="row justify-content-evenly py-3">
+        <div class="col-md-3" style="width: 18rem;">
+            <img src="images/logo1.png" class="py-5" alt="...">
+            <h5 class="green-text">Healing</h5>
+            <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+            <a href="#" class="text-white">Read more..</a>
+        </div>
+
+        <div class="col-md-3" style="width: 18rem;">
+            <img src="images/logo2.png" class="py-5" alt="...">
+            <h5 class="green-text">Supportive</h5>
+            <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+            <a href="#" class="text-white">Read more..</a>
+        </div>
+
+        <div class="col-md-3" style="width: 18rem;">
+            <img src="images/logo3.png" class="py-5" alt="...">
+            <h5 class="green-text"> Ethical</h5>
+            <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+            <a href="#" class="text-white">Read more..</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container py-5">
+    <div class="row justify-content-center py-2">
+        <div class="col-md-8 text-center">
+            <h6 class="py-2">RETREATS</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nobis soluta commodi illum. Ipsam ipsum
+                consequuntur, explicabo error quidem sint maiores omnis. Similique ipsa praesentium ea, doloremque
+                possimus
+                vero odit.</p>
+        </div>
+        <div class="col-md-10 d-flex justify-content-center pt-5">
+            <button class="btn-sec-4">READ MORE</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item carousel-img bg-img-1 active">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nostrum ab, corrupti esse aut
+                    laudantium vero error voluptates. Nisi vitae amet distinctio aspernatur, beatae modi quas dolore
+                    laboriosam natus qui.</p>
+            </div>
+        </div>
+        <div class="carousel-item carousel-img bg-img-2">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nostrum ab, corrupti esse aut
+                    laudantium vero error voluptates. Nisi vitae amet distinctio aspernatur, beatae modi quas dolore
+                    laboriosam natus qui.</p>
+            </div>
+        </div>
+        <div class="carousel-item carousel-img bg-img-3">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nostrum ab, corrupti esse aut
+                    laudantium vero error voluptates. Nisi vitae amet distinctio aspernatur, beatae modi quas dolore
+                    laboriosam natus qui.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+
+<div class="container py-5">
+    <div class="row justify-content-center py-2">
+        <div class="col-md-8 text-center">
+            <h6 class="py-2">GIORGINA PONTENT</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nobis soluta commodi illum. Ipsam ipsum
+                consequuntur, explicabo error quidem sint maiores omnis. Similique ipsa praesentium ea, doloremque
+                possimus
+                vero odit.</p>
+        </div>
+        <div class="col-md-10 d-flex justify-content-center pt-5">
+            <button class="btn-sec-4">LEARN MOR ABOUT GIORGINA</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid section-3">
+    <div class="col-md-12 d-flex justify-content-center pt-5">
+        <button class="btn5">EVENT FOR 2023</button>
+    </div>
+    <div class="row justify-content-evenly py-3">
+        
+        <div class="col-md-3" style="width: 18rem;">
+            
+            <h6 class="green-text">Weekly Meditation Class</h6>
+            <h6 class="green-text">Location </h6>
+            <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+            <h6 class="green-text"> Dates</h6>
+            <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+                <h6 class="green-text">Time</h6>
+
+            <a href="#" class="text-white">Read more..</a>
+        </div>
+
+        <div class="col-md-3" style="width: 18rem;">
+            
+            <h6 class="green-text">Weekly Meditation Class</h6>
+            <h6 class="green-text">Location </h6>
+            <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+            <h6 class="green-text"> Dates</h6>
+            <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+                <h6 class="green-text">Time</h6>
+            <a href="#" class="text-white">Read more..</a>
+        </div>
+
+        <div class="col-md-3" style="width: 18rem;">
+            
+            <h6 class="green-text">Weekly Meditation Class</h6>
+            <h6 class="green-text">Location </h6>
+            <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+            <h6 class="green-text"> Dates</h6>
+            <p class="text-white">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+                <h6 class="green-text">Time</h6>
+            <a href="#" class="text-white">Read more..</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container py-5">
+    <div class="row justify-content-center py-2">
+        
+        <div class="col-md-10 d-flex justify-content-center pt-5">
+            <button class="btn-sec-4">LEARN MOR ABOUT GIORGINA</button>
+        </div>
+        <p class="text-center">Lorem ipsum dolor sit vero odit.</p>
+        <p class="text-center">FAQs</p>
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid section-3">
+    <div class="col-md-10 d-flex justify-content-center pt-5">
+        <h6 class="green-text">Get in Touch</h6>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive-nav/1.0.39/responsive-nav.min.js"></script>
+</body>
 </html>
